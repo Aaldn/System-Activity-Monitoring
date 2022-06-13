@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+
+  cron:
+    build: .
+    container_name: system_activity_monitoring
+    volumes:
+      - ./logs:/var/log/system_activity_monitoring
